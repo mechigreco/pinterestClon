@@ -1,0 +1,155 @@
+/* ===================================================================================== */
+/* HOJA DE ESTILOS PARA EL PINTEREST */
+/* ===================================================================================== */
+
+/* Estilo del boton Inicio, redondeado, fondo negro, alienado al centro del elemento*/
+.boton_inicio{
+  border-radius: 23px;
+  color: rgb(244, 244, 245);
+  width: 73.31px;
+  height: 48px;
+  padding: 0px 16px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  background: rgb(3, 0, 0);
+  cursor: pointer;
+  text-transform: none;
+  font-size: 16px;
+}
+/* Cuando se pasa el mouse encima, cambia de color del boton inicio */
+.boton_inicio:hover{
+    color: white;
+}
+/* Estilo del boton Hoy, redondeado, alienado al centro del elemento*/
+.boton_hoy{
+    border-radius: 23px;
+    width: 73.31px;
+    height: 48px;
+    padding: 0px 16px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-transform: none;
+    font-size: 16px;
+  }
+/* Cuando se pasa el mouse encima, cambia de color del boton hoy */
+  .boton_hoy:hover{
+      background-color: #EFEFEF;
+  }
+/* Estilo del Input de la barra de busqueda que esta en el navbar */
+  .busqueda{
+      border-radius: 50px;
+      height: 48px;
+  }
+/* Al darle clic al input, el borde cambia de color a azul clarito */
+  .busqueda:focus{
+      box-shadow: none;
+  }
+  /* Al pasar el mouse encima del input, el fondo cambia de color */
+  .busqueda:hover{
+      background-color: #EFEFEF;
+  }
+  /* Medida de la barra de busqueda */
+  .input-group{
+      width: 100%;
+      border: none;
+  }
+  /* Icono de lupa de la barra de busqueda */
+  .lupa{
+      position: absolute;
+      z-index: 1;
+      margin: 10px;
+  }
+  /*Estilo del boton del navbar en la parte superior derecha  */
+  .boton_campana{
+      width: 50px;
+      height: 50px;
+      font-size: 23px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+    }
+    /* El boton cambia de color cuando se pasa encima el mouse */
+    .boton_campana:hover{
+        background-color: #EFEFEF;
+    }
+   /* Estilo aplicado a cada una de las filas, la posicion que va a tomar segun su medida */
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        flex-flow: column; 
+        justify-content: center;
+        break-inside: avoid;
+        page-break-inside: avoid;  
+        column-gap: 10px;
+        padding: 5px;
+    }
+/* Estilo aplicado al conjunto de imagenes que conforma la galeria. Esta dividido en 6 columnas */
+    .imagenes{
+        flex-basis: 25%;
+        margin: 10px;
+        column-count: 6; 
+    }    
+/* Estilo aplicado a cada imagen del proyecto */
+    .galeria img{
+        border-radius: 15px;
+        width: 100%;
+    }
+/* Media queries para hacer la pantalla responsiva, 5 estilos diferentes */
+    @media screen and (max-width: 1920px) {
+        .imagenes{
+            columns: 6;
+        }
+    }
+    
+    @media screen and (max-width: 1280px){
+        .imagenes{
+            columns: 5;
+        }
+    }
+    
+    @media screen and ( max-width:800px){
+        .imagenes{
+           columns: 4;
+        }
+    }
+
+    @media screen and (max-width: 767px) { 
+        .imagenes {
+            columns:3;
+        }
+
+    }
+    
+    @media screen and (max-width: 480px){
+        .imagenes{
+            columns: 1;
+        }
+    }
+/* Estilo aplicado al footer para que se quede fijo al fondo de la pantalla */
+    .footer{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        color: black;
+        margin-bottom: 10px;   
+    }
+    /* Estilos aplicados a los botones + y ? que estan en el footer */
+    .boton_footer{
+        width: 56px;
+        height: 56px;
+        font-size: 30px;
+        border-radius: 100%;
+        display: block;
+        background: white;
+        margin: 5px;
+      }
+       /* El boton cambia de color cuando se pasa encima el mouse */
+      .boton_footer:hover{
+          background-color: #EFEFEF;
+      }
+
+
+    
